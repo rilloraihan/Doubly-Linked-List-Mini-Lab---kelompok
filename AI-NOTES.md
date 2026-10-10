@@ -40,3 +40,15 @@ penggunaan header, dan cara mengisi fungsi Task 1-2
 - Saya membuang penggunaan array dari saran AI saat proses build list dan memasukkannya satu per satu secara manual.
 - Menguji langsung fungsi traversal maju dan mundur, serta mengujinya setelah dilakukan insert/delete di tengah list.
 
+## Iman
+
+**Prompt:**
+"Bantu saya membuat fungsi insertAfter dan deleteElm untuk doubly linked list."
+
+**AI helped us with:**
+- Memberikan struktur dasar fungsi insertAfter dan deleteElm.
+- Menjelaskan alur kerja kedua fungsi tersebut.
+- Memberikan code sementara untuk testing di main().
+
+**What we changed/tested:**
+- Mengubah variabel-variabel dan argumen fungsi sesuai fungsi-fungsi sebelumnya.
