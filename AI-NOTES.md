@@ -20,3 +20,17 @@ penggunaan header, dan cara mengisi fungsi Task 1-2
   karena kelompok masih pemula Git dan multi-file menambah risiko error linker.
 - Kerangka saya kompilasi dengan g++ dan berhasil tanpa error sebelum di-push.
 - Test Task 1-2 (list 5 lagu)
+## Al Fathir
+
+**Prompt:**
+"Bantu saya membuat struktur dasar C++ tanpa array untuk Doubly Linked List yang berisi 5 node lagu, dan bagaimana cara aman menghubungkan pointer next dan prev saat insert di tengah agar tidak error."
+
+**AI helped us with:**
+- Menjelaskan urutan langkah manual untuk menyambungkan next dan prev tanpa menggunakan array atau for-loop.
+- Membantu memberikan logika perbaikan saat terjadi error traversal mundur akibat pointer prev yang lupa disambungkan.
+- Memberikan struktur dasar implementasi fungsi traverseForward dan traverseBackward yang bersih.
+
+**What we changed/tested:**
+- Kerangka dari AI awalnya menggunakan struct Node, saya ubah menyesuaikan aturan tugas menjadi menggunakan tipe bentukan infotype dan pointer address.
+- Saya membuang penggunaan array dari saran AI saat proses build list dan memasukkannya satu per satu secara manual.
+- Menguji langsung fungsi traversal maju dan mundur, serta mengujinya setelah dilakukan insert/delete di tengah list.
