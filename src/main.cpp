@@ -28,8 +28,25 @@ address createElm(infotype x){
     p->next = nullptr;
     return p; 
 }
-void insertLast(List &L, address P) {}
-void displayList(List L) {}
+void insertLast(List &L, address P) {
+     if (L.first == nullptr) {
+        L.first = P;
+        L.last = P;
+    } else {
+        P->prev = L.last;
+        L.last->next = P;
+        L.last = P;
+    }
+}
+void displayList(List L) {
+    address P = L.first;
+    while (P != nullptr) {
+        cout << P->data;
+        if (P->next != nullptr) cout << " <-> ";
+        P = P->next;
+    }
+    cout << endl;
+}
 
 // ===== Task 3 dan 4 : Al Fathir  =====
 void traverseForward(List L) {}
