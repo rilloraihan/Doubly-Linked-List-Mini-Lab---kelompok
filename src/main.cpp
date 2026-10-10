@@ -17,8 +17,17 @@ struct List {
 };
 
 // ===== Task 1 dan 2 : Rillo =====
-void createList(List &L) {}
-address createElm(infotype x) { return nullptr; }
+void createList(List &L) {
+    L.first = nullptr;
+    L.last = nullptr;
+}
+address createElm(infotype x){
+    address p = new elmList;
+    p->data = x;
+    p->prev = nullptr;
+    p->next = nullptr;
+    return p; 
+}
 void insertLast(List &L, address P) {}
 void displayList(List L) {}
 
