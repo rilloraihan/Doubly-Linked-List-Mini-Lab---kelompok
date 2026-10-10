@@ -47,3 +47,13 @@
 **What AI helped me with:**
 **What I changed or fixed myself:**
 **GitHub Issue / PR / Commit I contributed:**
+
+## Al Fathir
+
+**Name:** Al Fathir Abimanyu Gazaali
+**My main contribution:** Menulis kode manual penyambungan node C++ menggunakan syntax dasar, mengimplementasikan forward traversal dan backward traversal (Task 3-4).
+**What I learned about next and prev:** Bahwa penambahan/penghapusan node di tengah wajib memperbarui penunjuk dua arah sekaligus agar list tidak terputus.
+**The hardest part:** Menghubungkan ulang pointer prev tanpa menyebabkan segmentation fault.
+**What AI helped me with:** Membantu mengecek ulang koneksi pointer dan menyusun struktur tanpa array.
+**What I changed or fixed myself:** Menghapus penggunaan array dan for-loop untuk inisialisasi awal list.
+**GitHub Issue / PR / Commit I contributed:** Commit "Add forward traversal" dan "Add backward traversal".
