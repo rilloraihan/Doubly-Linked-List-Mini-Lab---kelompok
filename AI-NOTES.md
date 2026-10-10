@@ -40,15 +40,3 @@ penggunaan header, dan cara mengisi fungsi Task 1-2
 - Saya membuang penggunaan array dari saran AI saat proses build list dan memasukkannya satu per satu secara manual.
 - Menguji langsung fungsi traversal maju dan mundur, serta mengujinya setelah dilakukan insert/delete di tengah list.
 
-## Al Fathir
-
-**Prompt:**
-"Bantu saya membuat struktur dasar C++ tanpa array untuk Doubly Linked List yang berisi 5 node lagu."
-
-**AI helped us with:**
-- Menjelaskan langkah menyambungkan next dan prev tanpa array.
-- Memberikan struktur dasar fungsi traverseForward dan traverseBackward.
-
-**What we changed/tested:**
-- Mengubah struktur Node ke tipe infotype dan address.
-- Menguji fungsi traversal secara manual (hardcode).
