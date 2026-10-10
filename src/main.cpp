@@ -119,7 +119,39 @@ bool insertAfter(List &L, infotype prec, address P) {
     }
     return true;
 }   
-bool deleteElm(List &L, infotype x) { return false; }
+bool deleteElm(List &L, infotype x) {
+    address P = L.first;
+    while (P != nullptr && P->data != x) {
+        P = P->next;
+    }
+    
+    if (P == nullptr) {
+        return false;
+    }
+    
+    if (P == L.first && P == L.last) {
+        L.first = nullptr;
+        L.last = nullptr;
+    }
+
+    else if (P == L.first) {
+        L.first = P->next;
+        L.first->prev = nullptr;
+    }
+
+    else if (P == L.last) {
+        L.last = P->prev;
+        L.last->next = nullptr;
+    }
+
+    else {
+        P->prev->next = P->next;
+        P->next->prev = P->prev;
+    }
+    
+    delete P;
+    return true;
+}
 
 int main()
 {
