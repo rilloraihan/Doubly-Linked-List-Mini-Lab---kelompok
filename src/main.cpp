@@ -95,8 +95,63 @@ void traverseBackward(List L)
 }
 
 // ===== Task 5 : Iman Abdi Ilahi =====
-bool insertAfter(List &L, infotype prec, address P) { return false; }
-bool deleteElm(List &L, infotype x) { return false; }
+bool insertAfter(List &L, infotype prec, address P) {
+    address Q = L.first;
+    while (Q != nullptr && Q->data != prec) {
+        Q = Q->next;
+    }
+    
+    if (Q == nullptr) {
+        return false; 
+    }
+    
+    if (Q == L.last) {
+        P->prev = L.last;
+        L.last->next = P;
+        L.last = P;
+    } 
+
+    else {
+        P->next = Q->next;
+        P->prev = Q;
+        Q->next->prev = P;
+        Q->next = P;
+    }
+    return true;
+}   
+bool deleteElm(List &L, infotype x) {
+    address P = L.first;
+    while (P != nullptr && P->data != x) {
+        P = P->next;
+    }
+    
+    if (P == nullptr) {
+        return false;
+    }
+    
+    if (P == L.first && P == L.last) {
+        L.first = nullptr;
+        L.last = nullptr;
+    }
+
+    else if (P == L.first) {
+        L.first = P->next;
+        L.first->prev = nullptr;
+    }
+
+    else if (P == L.last) {
+        L.last = P->prev;
+        L.last->next = nullptr;
+    }
+
+    else {
+        P->prev->next = P->next;
+        P->next->prev = P->prev;
+    }
+    
+    delete P;
+    return true;
+}
 
 int main()
 {
