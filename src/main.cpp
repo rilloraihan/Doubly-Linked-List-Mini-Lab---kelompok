@@ -76,6 +76,7 @@ void traverseForward(List L)
         P = P->next;
     }
 }
+
 void traverseBackward(List L)
 {
     address P = L.last;
