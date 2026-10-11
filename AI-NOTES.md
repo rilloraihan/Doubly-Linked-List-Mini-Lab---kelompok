@@ -45,6 +45,8 @@ penggunaan header, dan cara mengisi fungsi Task 1-2
 **Prompt:**
 "Bantu saya membuat fungsi insertAfter dan deleteElm untuk doubly linked list."
 
+## Gaza
+
 **AI helped us with:**
 - Memberikan struktur dasar fungsi insertAfter dan deleteElm.
 - Menjelaskan alur kerja kedua fungsi tersebut.
