@@ -38,7 +38,7 @@
 
 ---
 
-## Gaza
+## Gaza Raushan Fikri
 
 **Name:** Gaza Raushan Fikri
 **My main contribution:** Mengerjakan Task 7 (mencari contoh penerapan dunia nyata), Task 8 (menjelaskan alur perubahan pointer saat menghapus node), dan Task 9 (melakukan pengujian ketahanan kode / *Break & Fix*).
