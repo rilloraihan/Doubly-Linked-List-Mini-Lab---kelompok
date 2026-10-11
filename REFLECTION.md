@@ -40,10 +40,10 @@
 
 ## Gaza
 
-**Name:**
-**My main contribution:**
-**What I learned about next and prev:**
-**The hardest part:**
-**What AI helped me with:**
-**What I changed or fixed myself:**
-**GitHub Issue / PR / Commit I contributed:**
+**Name:** Gaza Raushan Fikri
+**My main contribution:** Mengerjakan Task 7 (mencari contoh penerapan dunia nyata), Task 8 (menjelaskan alur perubahan pointer saat menghapus node), dan Task 9 (melakukan pengujian ketahanan kode / *Break & Fix*).
+**What I learned about next and prev:** Saya belajar bahwa saat menghapus node di tengah list (misal menghapus node C di antara B dan D), pointer `next` dari node sebelumnya (B) harus langsung diarahkan ke node setelahnya (D), dan pointer `prev` dari node setelahnya (D) harus menunjuk kembali ke node sebelumnya (B) agar list tidak terputus.
+**The hardest part:** Memikirkan berbagai kemungkinan *edge cases* (skenario ekstrem) yang bisa membuat program mengalami *crash* atau *segmentation fault*, serta merancang logika validasi yang tepat untuk menanganinya.
+**What AI helped me with:** AI membantu memberikan ide contoh penerapan di dunia nyata (seperti *Browser History*) dan memberikan masukan terkait skenario pengujian *error* beserta ide solusinya.
+**What I changed or fixed myself:** Saya menyusun ulang penjelasan alur pointer dengan bahasa sendiri dan secara langsung mengimplementasikan kode validasi (seperti menambahkan pengecekan `if (head == NULL)` atau mengecek apakah node bernilai NULL) ke dalam program agar terhindar dari *crash*.
+**GitHub Issue / PR / Commit I contributed:** Commit "Add answers for Task 7-9 and implement error validation"
