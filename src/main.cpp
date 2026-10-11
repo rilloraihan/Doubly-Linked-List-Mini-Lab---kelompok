@@ -154,6 +154,32 @@ bool deleteElm(List &L, infotype x) {
 }
 
 int main()
-{
+{   
+    List L;
+    createList(L);
+    insertLast(L, createElm("Song A"));
+    insertLast(L, createElm("Song B"));
+    insertLast(L, createElm("Song C"));
+    insertLast(L, createElm("Song D"));
+    insertLast(L, createElm("Song E"));
+
+    displayList(L);
+    traverseForward(L);
+    traverseBackward(L);
+
+    insertAfter(L, "Song B", createElm("Song X"));
+    displayList(L);
+    traverseBackward(L);
+
+    deleteElm(L, "Song C");
+    displayList(L);
+    traverseBackward(L);
+
+
+    deleteElm(L, "Song A");   
+    deleteElm(L, "Song E");   
+    deleteElm(L, "Song Z");   
+    displayList(L);
+    traverseBackward(L);
     return 0;
 }
