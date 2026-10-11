@@ -45,8 +45,6 @@ penggunaan header, dan cara mengisi fungsi Task 1-2
 **Prompt:**
 "Bantu saya membuat fungsi insertAfter dan deleteElm untuk doubly linked list."
 
-## Gaza
-
 **AI helped us with:**
 - Memberikan struktur dasar fungsi insertAfter dan deleteElm.
 - Menjelaskan alur kerja kedua fungsi tersebut.
@@ -54,3 +52,17 @@ penggunaan header, dan cara mengisi fungsi Task 1-2
 
 **What we changed/tested:**
 - Mengubah variabel-variabel dan argumen fungsi sesuai fungsi-fungsi sebelumnya.
+
+## Gaza
+
+**Prompt:**
+"Bantu saya membuat fungsi insertFirst dan insertLast untuk doubly linked list menggunakan C++."
+
+**AI helped us with:**
+- Memberikan logika dasar dan contoh kode untuk menyisipkan node di awal dan di akhir list.
+- Menjelaskan penanganan kasus khusus ketika list masih dalam keadaan kosong.
+- Memberikan ilustrasi penyambungan pointer `next` dan `prev`.
+
+**What we changed/tested:**
+- Menyesuaikan tipe data parameter menjadi `pointer` dan struktur data menggunakan `infotype` sesuai dengan ketentuan tugas.
+- Menguji fungsi dengan memasukkan beberapa data dummy di `main()` untuk memastikan node baru benar-benar tersambung di awal dan di akhir list.
